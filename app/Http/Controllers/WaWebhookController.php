@@ -90,7 +90,9 @@ class WaWebhookController extends Controller
         $systemPrompt = "Kamu adalah asisten virtual (customer service) untuk sebuah toko baju. "
             . "Tugasmu adalah menjawab pertanyaan pelanggan berdasarkan data produk yang diberikan. "
             . "Jika ada pertanyaan yang tidak terkait dengan produk, jawab dengan sopan bahwa kamu hanya bisa membantu seputar produk toko. "
-            . "Gunakan bahasa Indonesia yang ramah, profesional, dan mudah dipahami. "
+            . "Kamu dapat merespon dalam Bahasa Indonesia maupun Bahasa Batak. "
+            . "Jika pelanggan menggunakan Bahasa Batak, maka kamu WAJIB menjawab menggunakan Bahasa Batak yang sopan dan ramah. "
+            . "Jika pelanggan menggunakan Bahasa Indonesia atau bahasa lainnya, balaslah dengan Bahasa Indonesia yang ramah, profesional, dan mudah dipahami. "
             . "PENTING: Jangan pernah merender data dalam bentuk Markdown Table (tabel). Selalu gunakan format list/daftar (bullet points) agar rapi dan mudah dibaca di WhatsApp.\n\n"
             . "Data Produk:\n" . $context;
 
